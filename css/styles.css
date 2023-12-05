@@ -1,0 +1,95 @@
+/* Color scheme
+
+primary background color - #F3EEEA  or #FFC7C7;
+   primary color - light pink  #ED9ED6;
+   accent color - purple #c187df or #C683D7;
+   text - medium gray and black #333;
+   link text - blue #7071E8 and purple #65128e;
+   button - purple #65128e;
+   button text - white;
+*/
+:root {
+  --LighterBackground: #f3eeea;
+  --LighterPink: #ed9ed6;
+  --LighterPurple: #c187df;
+  --GridGray: lightgray;
+  --BlackText: #333;
+  --DarkerBlack: #000;
+  --WhiteText: white;
+  --AccentText: #7071e8;
+  --AnchorVisited: #500973;
+  --AnchorActive: #044a16;
+  --ButtonPurple: #65128e;
+  --BorderBlack: rgba(0, 0, 0, 0.3);
+  --SunYellow: #edc655;
+  --SunMiddle: #fcffad;
+  --SunOrange: #f76414;
+  --RegularFont: 400;
+  --BoldFont: 700;
+  --GeneralFont: 16px;
+  --RegularH1: 30px;
+  --RegularH2: 24px;
+  --RegularH3: 18px;
+  --MiddleH1: 25px;
+  --SmallerH1: 20px;
+}
+
+html {
+  font-family: "Maitree", serif;
+  font-weight: var(--RegularFont);
+  font-size: var(--GeneralFont);
+  line-height: 1.6;
+  background-color: var(--LighterBackground);
+  color: var(--BlackText);
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Typography */
+
+h1 {
+  font-size: var(--RegularH1);
+  font-weight: var(--BoldFont);
+  color: var(--AccentText);
+}
+
+h2 {
+  font-size: var(--RegularH2);
+  font-weight: var(--BoldFont);
+}
+
+h3 {
+  font-size: var(--RegularH3);
+  font-weight: var(--BoldFont);
+}
+/* Layout */
+#personal_logo {
+  height: 75px;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--LighterPink);
+}
+
+.container {
+ margin: 0 auto;
+ text-align: center;
+ margin-top: 50px;
+ font-weight: var(--BoldFont);
+}
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  clear: both;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--LighterPurple);
+  color: var(--DarkerBlack);
+}
