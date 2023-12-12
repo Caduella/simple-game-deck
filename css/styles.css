@@ -81,15 +81,3 @@ h3 {
  margin-top: 50px;
  font-weight: var(--BoldFont);
 }
-
-.page-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  clear: both;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: var(--LighterPurple);
-  color: var(--DarkerBlack);
-}

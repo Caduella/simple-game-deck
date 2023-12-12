@@ -1,5 +1,5 @@
 // Create a variable called pokemonList and assign Pokemon data to it.
-var pokemonList = [
+let pokemonList = [
     {
         name: 'Bulbasaur',
         height: 0.7,
@@ -16,17 +16,14 @@ var pokemonList = [
         types: ['fire', 'flying']
     },
 ]
-// Create a for loop to iterate over each pokemon in the array
-for (var i = 0; i < pokemonList.length; i++){
-    var pokemon = pokemonList[i]; //Select an individual pokemon from the pokemonList array
-    
-// Add conditional to check if the height is above 1
-if (pokemon.height > 1) {
-    document.write(pokemon.name + " (height: " + pokemon.height + ") - Wow, that's big! <br>"); 
-}
-else {document.write(pokemon.name + " (height: " + pokemon.height + ") <br>");
-}   
-}
+// Use a forEach funciotn to iterate over each pokemon in the array
+
+pokemonList.forEach(function(pokemon) {
+    document.write('<p>Name: ' + pokemon.name + '</p>');
+    document.write('<p>Height: ' + pokemon.height + ' meters</p>');
+    document.write('<p>Types: ' + pokemon.types.join(', ') + '</p>');
+    document.write('<hr>'); // Separating each Pokemon's details
+});
 
     
 
