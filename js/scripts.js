@@ -43,7 +43,7 @@ let pokemonRepository = (function () {
 	}
 
  // Display loading message on the page
-	function showLoadingMessage() {
+  function showLoadingMessage() {
     let loadingMessage = document.createElement("div");
     loadingMessage.innerText = "Loading...";
     loadingMessage.classList.add("loading-message");
