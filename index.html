@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<link
-				rel="shortcut icon"
-				href="img/favicon.png">
-			<link
-				rel="stylesheet"
-				type="text/css"
-				href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
-		 >
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<title>Simple Game Deck Home</title>
-</head>
-<body>
-	<header class="page-header">
-		<img src="img/rina-logo.svg" alt="Rina Shinn Logo" id="personal_logo" class="page-header__item">
-		
- </header>
- <div class="container">
-	  <h1>Pokedex</h1>
-		<ul class="pokemon-list"></ul>
-		<script src="js/promise-polyfill.js"></script>
-		<script src="js/fetch-polyfill.js"></script>
-    <script src="js/scripts.js"></script>
- </div>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon"	href="img/favicon.png">
+		<link	rel="stylesheet" type="text/css"
+					href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<title>Simple Game Deck Home</title>
+	</head>
+
+	<body>
+		<header class="page-header">
+			<img src="img/rina-logo.svg" alt="Rina Shinn Logo" id="personal_logo" class="page-header__item">
+		</header>
+
+		<div class="container">
+			<h1>Pokedex</h1>
+			<input type="text" placeholder="Search Pokemons" id="filter_pokemons"/>
+			<ul class="pokemon-list">
+				<li class="pokemon-item"></li>
+			</ul>
+			<script src="js/promise-polyfill.js"></script>
+			<script src="js/fetch-polyfill.js"></script>
+			<script src="js/scripts.js"></script>
+		</div>
+
+		<script src="js/tota11y.min.js"></script>
+	</body>
 
 </html>
