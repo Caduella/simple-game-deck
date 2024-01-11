@@ -11,3 +11,4 @@ Technical Requirements
 	The app must not throw any errors when being used.
 	The app should be deployed to a publickly accessible platform like GitHub pages.
 	The app must work in Chrome, Firefox, Edge, and Internet Explorer 11.
+JavaScript and CSS files are minified.
