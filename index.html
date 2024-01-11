@@ -1,33 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon"	href="img/favicon.png">
-		<link	rel="stylesheet" type="text/css"
-					href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<title>Simple Game Deck Home</title>
-	</head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"	href="img/favicon.png">
+    <title>Simple Game Deck Home</title>
 
-	<body>
-		<header class="page-header">
-			<img src="img/rina-logo.svg" alt="Rina Shinn Logo" id="personal_logo" class="page-header__item">
-		</header>
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous">
+    <link	rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 
-		<div class="container">
-			<h1>POKEDEX</h1>
-			<ul class="pokemon-list">
-				<li class="pokemon-item"></li>
-			</ul>
-			<div id="modal-container">
-			</div>
-			<script src="js/promise-polyfill.js"></script>
-			<script src="js/fetch-polyfill.js"></script>
-			<script src="js/scripts.js"></script>
-		</div>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">	
+</head>
 
-		<script src="js/tota11y.min.js"></script>
-	</body>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-9 text-center">
+
+<!-- Bootstrap Navbar -->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <span class="navbar-brand">Pokemon</span>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span role="button">
+              <i class="fa fa-search" aria-hidden="true" style="color: #ffffff;"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse show" id="navbarToggler">
+          <form class="form-inline ml-auto">
+              <input class="form-control mr-2 my-1" type="text" id="filter_pokemons" placeholder="Search for a Pokemon" aria-label="Search"/>
+              <button class="btn btn-outline-success show my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+      </nav>
+
+<!-- Main content -->
+    <div class="text-center">
+      <h1>Pokedex</h1>
+      <ul class="pokemon-list list-group"></ul>
+    </div>
+
+<!-- Button trigger modal -->
+    <button
+      type="button" class="btn btn-primary button-class" data-toggle="modal" data-target="#pokemonModal">
+    </button>
+
+<!-- Modal -->
+    <div class="modal fade" id="pokemonModal" tabindex="-1" role="dialog" aria-labelledby="pokemonModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title" id="pokemonModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+<!--jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!--For Browser compatibility -->
+		<script src="js/promise-polyfill.js"></script>
+		<script src="js/fetch-polyfill.js"></script>
+		
+		<script src="js/scripts.js"></script>
+
+<!--For Accessibility-->
+		<script src="js/tota11y.min.js"></script>         
+</body>
 
 </html>

@@ -28,59 +28,11 @@ primary background color - #F3EEEA  or #FFC7C7;
   --MediumFontSize: 30px;
   --SmallFontSize: 14px;
 }
-
-html {
-  font-family: "Maitree", serif;
-  font-weight: var(--RegularFontWeight);
-  font-size: var(--GeneralFontSize);
-  line-height: 1.6;
-  background-color: var(--LighterBackground);
-  color: var(--BlackText);
-}
-
-* {
-  box-sizing: border-box;
-}
-/* Typography */
-
 h1 {
   font-size: var(--LargeFontSize);
   font-weight: var(--BoldFont);
   color: var(--AccentText);
 }
-
-/* Layout */
-#personal_logo {
-  height: 75px;
-}
-
-.page-header {
-  display: flex;
-  width: 100%;
-  padding: 20px;
-  background-color: var(--LighterPink);
-}
-
-.container {
- margin: 0 auto;
- text-align: center;
- margin-top: 20px;
- font-weight: var(--BoldFont);
- font-size: var(--MediumFontSize);
-}
-
-.pokemon-list {
-list-style: none;
-margin: 0;
-padding: 0;
-}
-
-.pokemon-item {
-margin: 10px;
-text-align: center;
-padding: 20px;
-}
-
 .button-class {
 	background-color:  var(--LighterPurple)
 	border: none;
@@ -108,105 +60,37 @@ padding: 20px;
     color:white
 }
 
-#modal-container {
-    display: none;
-  }
-  
-#modal-container.is-visible {
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  
-  /* to show it above other content */
-  z-index: 999; 
-  
-  /* to allow scrolling if the screen is not high enough*/
-  overflow: auto; 
-  
-  /* this is used to center the modal */
-  display: grid;
-  text-align: center;
-}
+@media all and (max-width: 440px) {
 
-.modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: 4px solid var(--ButtonPurple);
-  background: white;
-  padding: 15px;
-  width: 100%;
-  max-width: 700px;
-  text-align: center;
-  font-size: var(--MediumFontSize);
-  font-weight: 700;
-}
-
-.modal-close {
-  float: right;    
-  background-color: white;
-  border-radius: 4px;
-  border: 4px solid var(--ButtonPurple);
-  text-align: center;
-  text-decoration: none;
-  font-size: var(--MediumFontSize);
-  font-weight: 700;
-  transition-duration: 2s;
-}
-
- .modal-close:hover,
- .modal-close.class:focus,
- .modal-close:active {
-    cursor: pointer;
-    background-color: var(--AccentText);
-    color:white
- }
-  
-  .modal h1 {
-    margin-top: 0;
-  }
-  
-  .modal p {
-    margin-bottom: 0;
+  /* decrease font sizes and padding for small screens */
+  page-header {
+    width: 400px;
   }
 
-  @media all and (max-width: 440px) {
+  body {
+      font-size: 13pt;
+      padding: 0 20px;
+  }
 
-    /* decrease font sizes and padding for small screens */
-    page-header {
-      width: 400px;
-    }
+  h1 {
+      font-size: var(--MediumFontSize);
+  }
 
-    body {
-        font-size: 13pt;
-        padding: 0 20px;
-    }
+  .listItemButton {
+      font-size: 16pt;
+  }
 
-    h1 {
-        font-size: var(--MediumFontSize);
-    }
+  ul {
+      padding: 5px;
+  }
 
-    .listItemButton {
-        font-size: 16pt;
-    }
-
-    ul {
-        padding: 5px;
-    }
-
-    ul li {
-        margin: 10px 5px;
-    }
-    .button-class {
-      width: 9em;
-      font-size: 20px;
-      border: 2px solid var(--ButtonPurple);
-    }
+  ul li {
+      margin: 10px 5px;
+  }
+  .button-class {
+    width: 9em;
+    font-size: 20px;
+    border: 2px solid var(--ButtonPurple);
+  }
 
 }
