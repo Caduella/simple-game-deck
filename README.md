@@ -1,5 +1,14 @@
 # Simple-Game-Deck
+
+## Description
 Simple-game-deck is a small web application with HTML, CSS, and JavaScript that loads data from an external API and enables viewing of data points in detail.
+
+## Link to the App
+https://caduella.github.io/simple-game-deck/
+
+## Screenshot of the App
+![Simple game start](simple-game-dex-start.png)
+![Simple game modal](simple-game-dex-modal.png)
 
 ## Key Features
 - Load data from an external source (API)
@@ -18,5 +27,4 @@ Simple-game-deck is a small web application with HTML, CSS, and JavaScript that 
 - The app works in Chrome, Firefox, Edge, and Internet Explorer 11.
 - JavaScript and CSS files are minified.
 
-## Live Link
-[Simple-Game-Dex](https://caduella.github.io/simple-game-deck/)
+
